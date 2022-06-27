@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>İnteractive Pricing Component</title>
+	<link rel="stylesheet" type="text/css" href="pricing.css">
+</head>
+<body>
+	<h1>Simple, traffic-based pricing</h1>
+	<p class="sign">Sign-up for our 30-day trail. No credit card required.</p>
+	<div class="all">
+		<span class="page">100k PAGEVIEWS</span>
+		<span class="write" >$<b id="write">16.000</b>/month</span><br>
+		<input type="range"  min="1" max="32000" value="16000" class="range" id="range" oninput="document.getElementById('write').innerHTML = this.value"><br>
+		<span class="monthly">Monthly Biling</span>
+		<label class="switch"> 
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label>
+		<span class="yearly">Yearly Billing</span>
+		<span class="discount">25% discount</span><br><br><br><br><br><br>
+		<hr >
+		<p class="web"><dfn>✔</dfn> Unlimited websites</p>
+		<p class="web"><dfn>✔</dfn> 100% data ownership</p>
+		<p class="web"><dfn>✔</dfn> Email reports</p>
+		<form>
+		<input type="submit" value="Start my trail" class="submit"></form>
+	</div>
+</body>
+</html>
